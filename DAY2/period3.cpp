@@ -9,16 +9,11 @@ public:
     string name;
     int age;
     string birthDate;
-
-    void display() {
-        cout << "Student ID: " << studentID << endl;
-        cout << "Name: " << name << endl;
-        cout << "Age: " << age << endl;
-        cout << "Birthdate: " << birthDate << endl;
-    }
 };
 
-void addStudents(vector<Student>& students) {
+vector<Student> students;
+
+void addStudents() {
     for (int i = 0; i < 3; ++i) {
         Student student;
         cout << "Enter student ID: ";
@@ -33,17 +28,18 @@ void addStudents(vector<Student>& students) {
     }
 }
 
-void displayStudents(const vector<Student>& students) {
-    for (const auto& student : students) {
-        student.display();
+void displayStudents() {
+    for (int i = 0; i < students.size(); ++i) {
+        cout << "Student ID: " << students[i].studentID << endl;
+        cout << "Name: " << students[i].name << endl;
+        cout << "Age: " << students[i].age << endl;
+        cout << "Birthdate: " << students[i].birthDate << endl;
     }
 }
 
 int main() {
-    vector<Student> students;
-
-    addStudents(students);
-    displayStudents(students);
+    addStudents();
+    displayStudents();
 
     return 0;
 }

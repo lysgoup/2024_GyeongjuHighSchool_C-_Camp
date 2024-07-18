@@ -8,13 +8,6 @@ public:
     string name;
     int age;
     string birthDate;
-
-    void display() {
-        cout << "Student ID: " << studentID << endl;
-        cout << "Name: " << name << endl;
-        cout << "Age: " << age << endl;
-        cout << "Birthdate: " << birthDate << endl;
-    }
 };
 
 int main() {
@@ -24,7 +17,10 @@ int main() {
     student1.age = 20;
     student1.birthDate = "2003-01-01";
 
-    student1.display();
+    cout << "Student ID: " << student1.studentID << endl;
+    cout << "Name: " << student1.name << endl;
+    cout << "Age: " << student1.age << endl;
+    cout << "Birthdate: " << student1.birthDate << endl;
 
     return 0;
 }

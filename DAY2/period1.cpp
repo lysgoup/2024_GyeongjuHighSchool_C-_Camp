@@ -9,13 +9,6 @@ public:
     string name;
     int age;
     string birthDate;
-
-    void display() {
-        cout << "Student ID: " << studentID << endl;
-        cout << "Name: " << name << endl;
-        cout << "Age: " << age << endl;
-        cout << "Birthdate: " << birthDate << endl;
-    }
 };
 
 int main() {
@@ -36,9 +29,15 @@ int main() {
     students.push_back(student1);
     students.push_back(student2);
 
-    for (const auto& student : students) {
-        student.display();
-    }
+    cout << students[0].studentID << endl;
+    cout << students[0].studentID << endl;
+    cout << students[0].studentID << endl;
+    cout << students[0].studentID << endl;
+
+    cout << students[1].studentID << endl;
+    cout << students[1].studentID << endl;
+    cout << students[1].studentID << endl;
+    cout << students[1].studentID << endl;
 
     return 0;
 }
