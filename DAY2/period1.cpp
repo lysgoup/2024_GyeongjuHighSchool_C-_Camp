@@ -30,14 +30,14 @@ int main() {
     students.push_back(student2);
 
     cout << students[0].studentID << endl;
-    cout << students[0].studentID << endl;
-    cout << students[0].studentID << endl;
-    cout << students[0].studentID << endl;
+    cout << students[0].name << endl;
+    cout << students[0].age << endl;
+    cout << students[0].birthDate << endl;
 
     cout << students[1].studentID << endl;
-    cout << students[1].studentID << endl;
-    cout << students[1].studentID << endl;
-    cout << students[1].studentID << endl;
+    cout << students[1].name << endl;
+    cout << students[1].age << endl;
+    cout << students[1].birthDate << endl;
 
     return 0;
 }
